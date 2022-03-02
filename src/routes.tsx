@@ -10,6 +10,8 @@ export interface RouteObj {
   component?: React.FC<any> | React.LazyExoticComponent<React.FC<any>>;
 }
 
-const routes: Array<RouteObject> = [{ path: "/home", element: <Home /> }];
+const routes: Array<RouteObject> = [
+  { path: "/home", element: React.createElement(Home) },
+];
 
 export default routes;
